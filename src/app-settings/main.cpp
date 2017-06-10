@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    QSettings settings("sims.ini", QSettings::IniFormat);
+    QSettings settings("ShiftIMS.ini", QSettings::IniFormat);
 
     MainWindow mainWindow(&settings);
     mainWindow.show();
