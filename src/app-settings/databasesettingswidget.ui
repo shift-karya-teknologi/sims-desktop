@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DatabaseSettingsWidget</class>
+ <widget class="QWidget" name="DatabaseSettingsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>254</width>
+    <height>197</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="driverLabel">
+     <property name="text">
+      <string>&amp;Driver</string>
+     </property>
+     <property name="buddy">
+      <cstring>driverComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="driverComboBox"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="hostLabel">
+     <property name="text">
+      <string>Nama &amp;Host</string>
+     </property>
+     <property name="buddy">
+      <cstring>hostEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="hostEdit">
+     <property name="maxLength">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="portLabel">
+     <property name="text">
+      <string>&amp;Port</string>
+     </property>
+     <property name="buddy">
+      <cstring>portSpinBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QSpinBox" name="portSpinBox">
+     <property name="maximum">
+      <number>65535</number>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="schemaLabel">
+     <property name="text">
+      <string>&amp;Skema</string>
+     </property>
+     <property name="buddy">
+      <cstring>schemaEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="schemaEdit">
+     <property name="maxLength">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="usernameLabel">
+     <property name="text">
+      <string>Nama &amp;Pengguna</string>
+     </property>
+     <property name="buddy">
+      <cstring>usernameEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="usernameEdit">
+     <property name="maxLength">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="passwordLabel">
+     <property name="text">
+      <string>Kata &amp;Sandi</string>
+     </property>
+     <property name="buddy">
+      <cstring>passwordEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="passwordEdit">
+     <property name="maxLength">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="testButton">
+     <property name="text">
+      <string>&amp;Uji Koneksi</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>driverComboBox</tabstop>
+  <tabstop>hostEdit</tabstop>
+  <tabstop>portSpinBox</tabstop>
+  <tabstop>schemaEdit</tabstop>
+  <tabstop>usernameEdit</tabstop>
+  <tabstop>passwordEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
