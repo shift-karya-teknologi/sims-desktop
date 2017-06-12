@@ -3,5 +3,6 @@
 /bin
 /lib
 /src/_backups
+/src/offline-installer/packages/id.shiftkom.sims/data
 *.pro.user
 *.bak

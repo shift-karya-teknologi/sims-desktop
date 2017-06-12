@@ -1,6 +1,6 @@
 QT = core gui widgets sql
 TARGET = ShiftIMS-Settings
-DESTDIR = $$PWD/../../dist
+DESTDIR = $$PWD/../../dist/portable
 TEMPLATE = app
 DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \

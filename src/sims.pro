@@ -1,4 +1,6 @@
 TEMPLATE = subdirs
 CONFIG += ordered
 SUBDIRS = \
-    app-settings
+    app-settings \
+    app \
+    offline-installer

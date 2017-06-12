@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Shift IMS Installer</Name>
+    <Version>1.0.0</Version>
+    <Title>Shift IMS Installer</Title>
+    <Publisher>Shift IT Solution</Publisher>
+    <StartMenuDir>Shift IMS</StartMenuDir>
+    <TargetDir>@ApplicationsDir@/ShiftIMS</TargetDir>
+</Installer>
