@@ -18,6 +18,7 @@ LoginDialog::LoginDialog(QWidget *parent)
 
     adjustSize();
     setFixedHeight(height());
+    setFixedWidth(275);
 }
 
 LoginDialog::~LoginDialog()
@@ -37,7 +38,9 @@ void LoginDialog::accept()
     }
 
     QSqlQuery q;
-    q.prepare("select * from users where username=?");
+    q.prepare("select id, username, fullname, is_active, is_admin, password"
+              " from users"
+              " where username=?");
     q.bindValue(0, username);
     q.exec();
 
@@ -48,7 +51,7 @@ void LoginDialog::accept()
         return;
     }
 
-    if (!q.value("active").toBool()) {
+    if (!q.value("is_active").toBool()) {
         ui->usernameEdit->setFocus();
         ui->usernameEdit->selectAll();
         QMessageBox::warning(this, "Peringatan", "Akun pengguna tidak aktif!");
@@ -67,6 +70,8 @@ void LoginDialog::accept()
     QVariantMap currentUser;
     currentUser.insert("id", q.value("id").toUInt());
     currentUser.insert("username", q.value("username").toString());
+    currentUser.insert("fullname", q.value("fullname").toString());
+    currentUser.insert("is_admin", q.value("is_admin").toBool());
     qApp->setProperty("CURRENT_USER", currentUser);
 
     QDialog::accept();

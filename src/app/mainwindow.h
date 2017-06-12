@@ -4,6 +4,8 @@
 #include <QMainWindow>
 
 class QLabel;
+class QMenu;
+class QAction;
 
 class MainWindow : public QMainWindow
 {
@@ -15,11 +17,16 @@ public:
 public slots:
     void showLoginDialog();
     void showChangePasswordDialog();
+    void showUserAndGroupManager();
 
 private:
     void updateStatusBar();
+    void updateMenusAndActions();
 
     QLabel* usernameLabel;
+
+    QMenu* settingsMenu;
+    QAction* manageUserAndGroupAction;
 };
 
 #endif // MAINWINDOW_H

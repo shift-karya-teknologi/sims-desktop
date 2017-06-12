@@ -7,12 +7,21 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     logindialog.cpp \
-    changepassworddialog.cpp
+    changepassworddialog.cpp \
+    userandgroupmanager.cpp \
+    usermanager.cpp \
+    usergroupmanager.cpp \
+    usergroupeditor.cpp
 HEADERS += \
         mainwindow.h \
     logindialog.h \
-    changepassworddialog.h
+    changepassworddialog.h \
+    userandgroupmanager.h \
+    usermanager.h \
+    usergroupmanager.h \
+    usergroupeditor.h
 
 FORMS += \
     logindialog.ui \
-    changepassworddialog.ui
+    changepassworddialog.ui \
+    usergroupeditor.ui
